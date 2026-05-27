@@ -53,7 +53,7 @@ chatBox.appendChild(userMessage);
             content: message
         });
 
-        const response = await fetch("http://localhost:3000/chat", {
+        const response = await fetch("https://desion-ai-srever.onrender.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
