@@ -334,3 +334,61 @@ body{
   margin:0;
   overflow:hidden;
 }
+
+.timestamp{
+  font-size:12px;
+  opacity:0.6;
+  margin-top:8px;
+}
+
+
+.message-wrapper{
+  animation:fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@media(max-width:768px){
+
+  .message{
+    max-width:90%;
+  }
+
+  .input-area{
+    padding:10px;
+  }
+
+  .input-area input{
+    font-size:14px;
+  }
+
+}
+
+.input-area button{
+
+  padding:15px 20px;
+  border:none;
+  border-radius:10px;
+  background:lime;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+
+}
+
+.input-area button:hover{
+
+  transform:scale(1.05);
+
+}
